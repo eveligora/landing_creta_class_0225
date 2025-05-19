@@ -1,3 +1,5 @@
+
+
 @mixin st_btn {
 	display: inline-flex;
 	justify-content: center;
@@ -42,3 +44,9 @@
 // 	@extend %white_btn_1;
 // 	@extend %btn_size_1;
 // }
+
+
+%test_ext {
+	background-color: tomato;
+	font-size: 3rem;
+}

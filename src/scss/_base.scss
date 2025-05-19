@@ -15,6 +15,7 @@ body {
 body {
 	font-family: $font_inter;
 	font-weight: 600;
+	color: $color_text;
 }
 
 .wrapper {
@@ -57,13 +58,13 @@ body {
 }
 
 .container {
-	max-width: 154rem;
+	max-width: 156rem;
 	width: 100%;
 
 	margin: 0 auto;
 	padding: 0 2rem;
 	&.container--v2 {
-		max-width: 133rem;
+		max-width: 135rem;
 	}
 }
 

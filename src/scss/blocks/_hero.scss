@@ -1,0 +1,59 @@
+@use './helpers/abstracts' as *;
+
+.hero {
+	display: flex;
+	column-gap: 10rem;
+}
+
+.hero__col {
+	width: calc(50% - 5rem);
+}
+
+.hero__title {
+	margin-bottom: 11.2rem;
+
+	font-weight: 700;
+	font-size: 6.4rem;
+	line-height: 7rem;
+}
+
+.hero_form__radio_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.4rem;
+}
+
+.hero_form__radio {
+	@extend %test_ext;
+
+	@include st_btn;
+
+	height: 6rem;
+	min-width: 13rem;
+	padding: 2rem;
+
+	font-weight: 700;
+	font-size: 2.4rem;
+	border-width: 1.64px 1.64px 4.92px 1.64px;
+
+	border-style: solid;
+
+	border-color: rgba($color_black, 15%);
+	border-radius: 0.8rem;
+
+	&:has(.hero_form__radio_in:checked) {
+		background-color: $color_green;
+	}
+}
+
+.hero_form__radio_in {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.hero_test {
+	@extend %test_ext;
+	@include st_btn;
+}
