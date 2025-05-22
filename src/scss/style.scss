@@ -1,7 +1,10 @@
 @use './helpers/reset';
 @use './base';
 
-// blocks
+// components
+@use './components/btn_prime';
 
+// blocks
 @use './blocks/hero';
 @use './blocks/learning_slider';
+
