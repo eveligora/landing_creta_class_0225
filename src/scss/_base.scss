@@ -7,7 +7,7 @@ html {
 }
 
 html,
-body {
+body {	
 	height: 100%;
 	scroll-behavior: smooth;
 }
@@ -16,6 +16,7 @@ body {
 	font-family: $font_inter;
 	font-weight: 600;
 	color: $color_text;
+	font-size: 2rem;
 }
 
 .wrapper {
@@ -24,6 +25,8 @@ body {
 	flex-direction: column;
 	min-height: 100%;
 	overflow: hidden;
+
+	padding-top: var(--header-height);
 }
 
 .main {
@@ -77,36 +80,3 @@ body {
 .logo__img {
 	@extend %contain_img;
 }
-
-/* remove */
-
-header {
-	padding: 30px 6px;
-	display: flex;
-	align-items: center;
-	min-height: 120px;
-	font-size: 50px;
-	text-align: center;
-	justify-content: center;
-	background-color: #ccc;
-
-	// @include bp($point_2, min) {
-	// 	background-color: tomato;
-	// }
-}
-
-.header {
-	font-size: 20px;
-}
-
-.header__in {
-	color: tomato;
-
-	font-size: 2em;
-}
-
-h1 {
-	font-weight: normal;
-}
-
-/* remove */

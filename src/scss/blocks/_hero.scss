@@ -1,5 +1,9 @@
 @use './helpers/abstracts' as *;
 
+.section_hero {
+	padding: 4.6rem 0;
+}
+
 .hero {
 	position: relative;
 	display: flex;
@@ -140,3 +144,5 @@
 .hero__img {
 	@extend %contain_img;
 }
+
+

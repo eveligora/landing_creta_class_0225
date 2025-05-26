@@ -1,6 +1,6 @@
-// :root {
-// 	--color_accent: #2947A9;
-// }
+:root {
+	--header-height: 12rem;
+}
 
 // colors
 
@@ -12,6 +12,7 @@ $color_text: #000;
 // $color_accent: #2947a9;
 // $color_title: #292e3d;
 $color_green: #2cc84d;
+$color_green_2: #326a00;
 $color_orange: #FF7C3B;
 $color_brown: #974E24;
 $color_yellow: #FFF0CB;
@@ -20,6 +21,7 @@ $color_yellow: #FFF0CB;
 $font_inter: 'Inter', sans-serif;
 $font_manrope: 'Manrope', sans-serif;
 $transition_dur: 0.3s;
+$z_index_header: 99;
 
 // breakpoints
 $point_1: 1200px;
