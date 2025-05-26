@@ -30,6 +30,12 @@
 }
 
 .header_nav {
-	display: flex;
-	column-gap: 2.8rem;
+	@include bp($point_2, min) {
+		display: flex;
+		column-gap: 2.8rem;
+	}
+
+	@include bp($point_3) {
+		display: none;
+	}
 }
