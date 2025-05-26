@@ -10,3 +10,30 @@
 	justify-content: space-between;
 	column-gap: 5rem;
 }
+
+.footer__logo {
+	&:not(:last-child) {
+		margin-bottom: 2.4rem;
+	}
+}
+
+.footer_info {
+	font-weight: 400;
+	font-size: 2.2rem;
+	line-height: 1.7;
+
+	p:not(:last-child) {
+		margin-bottom: 0.4rem;
+	}
+
+	a {
+		color: $color_text;
+		transition: color $transition_dur ease-in-out;
+		text-decoration: none;
+		&:hover,
+		&:active,
+		&:focus {
+			color: $color_orange;
+		}
+	}
+}
