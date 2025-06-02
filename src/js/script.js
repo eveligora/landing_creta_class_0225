@@ -1,7 +1,5 @@
 const swiper = new Swiper('.swiper', {
-	slidesPerView: 3,
 	loop: true,
-	spaceBetween: 40,
 
 	// Navigation arrows
 	navigation: {
@@ -12,6 +10,21 @@ const swiper = new Swiper('.swiper', {
 	pagination: {
 		el: '.learningSliderPrevPag',
 		clickable: true,
+	},
+	breakpoints: {
+		640: {
+			slidesPerView: 1,
+		},
+
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 30,
+		},
+
+		1024: {
+			slidesPerView: 3,
+			spaceBetween: 40,
+		},
 	},
 });
 
