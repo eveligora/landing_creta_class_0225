@@ -43,9 +43,16 @@
 				</div>
 			</div>
 			<div class="hero__col">
-				<div class="hero__img_w">
-					<img src="./imgs/hero_img.png" alt="" class="hero__img" />
-				</div>
+				<!-- <picture class="hero__img_w">
+					<source srcset="./imgs/hero_img.avif">
+					<source srcset="./imgs/hero_img.webp">
+					<img src="./imgs/hero_img.png" alt="Hero image" class="hero__img" />
+				</picture> -->
+				<picture class="hero__img_w">
+					<source media="(max-width:767px)" srcset="./imgs/hero_img_3.png" />
+					<source media="(max-width:1023px)" srcset="./imgs/hero_img.png" />
+					<img src="./imgs/hero_img_2.png" alt="Hero image" class="hero__img" />
+				</picture>
 			</div>
 		</div>
 	</div>

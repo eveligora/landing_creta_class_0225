@@ -15,7 +15,12 @@
 	transition: all $transition_dur ease-in-out;
 
 	&.on_scroll {
-		height: 8rem;
+		@include bp($point_2, min) {
+			height: 8rem;
+		}
+		@include bp($point_3) {
+			height: 5rem;
+		}
 	}
 }
 

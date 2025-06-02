@@ -1,4 +1,5 @@
 @use '../variables' as *;
+@use '../mixins/breakpoints' as *;
 
 @mixin st_btn {
 	display: inline-flex;
@@ -137,13 +138,25 @@
 }
 
 %btn_size_3 {
-	column-gap: 1.2rem;
-	min-width: 16.2rem;
-	height: 5rem;
-	padding: 0 2rem;
-
-	line-height: 5rem;
-	font-size: 2.1rem;
-
 	border-radius: 0.6rem;
+
+	@include bp($point_2, min) {
+		column-gap: 1.2rem;
+		min-width: 16.2rem;
+		height: 5rem;
+		padding: 0 2rem;
+
+		line-height: 5rem;
+		font-size: 2.1rem;
+	}
+
+	@include bp($point_3) {
+		column-gap: .8rem;
+		min-width: 10rem;
+		height: 3.6rem;
+		padding: 0 1.2rem;
+
+		line-height: 3.6rem;
+		font-size: 1.8rem;
+	}
 }
